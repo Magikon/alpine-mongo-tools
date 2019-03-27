@@ -6,4 +6,4 @@ RUN apk add --no-cache mongodb-tools
 RUN apk add --no-cache bash
 RUN rm -f /var/cache/apk/*
 
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["sh", "-c", "while :; do sleep 3600; done"]
